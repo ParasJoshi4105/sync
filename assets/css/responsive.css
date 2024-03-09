@@ -1,0 +1,424 @@
+@media only screen and (max-width: 1680px) {}
+
+@media only screen and (max-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* News CSS */
+    .flex-newsBanner .newsBanner-headline {
+        width: 70%;
+    }
+
+    /* About CSS */
+    .sect6-ul,
+    .sect7-ul {
+        margin-left: 1.5rem !important;
+    }
+
+    /* Testimonial CSS */
+    .testi-img {
+        width: 60%;
+        top: -60%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    html {
+        font-size: 13px;
+    }
+
+    /* Landing  */
+    .section-2-content .content-font-size {
+        width: 65%;
+    }
+
+    /* News CSS */
+    .news-wrapper .subtitle-font-size p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 11px;
+    }
+
+    /* Footer CSS */
+    .footer-logo {
+        width: 10rem;
+    }
+
+    .footer-links>ul {
+        gap: var(--small-gap-size);
+    }
+
+    /* About CSS */
+    .sect6-about-content {
+        width: 90%;
+    }
+
+    /* News CSS */
+    .news-banner-swiper {
+        width: 85%;
+    }
+
+    /* Testimonial CSS */
+    .testi-img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* footer */
+    .footer-font p,
+    .footer-font a>span,
+    .footer-font span {
+        font-size: 1.25rem;
+    }
+
+    .footer-links>ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 2rem;
+        align-items: unset;
+    }
+
+    .flex-footer-one {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        gap: var(--small-gap-size);
+    }
+
+    .grid-sect2-news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-page-grid-division {
+        width: 100%;
+    }
+
+    /* Testimonial */
+    .testi-img {
+        top: -40%;
+    }
+
+    .swiper-button-next.swiper-button-testimonail-next {
+        right: 0rem;
+    }
+
+    .swiper-button-prev.swiper-button-testimonail-prev {
+        left: 0rem;
+    }
+
+    .swiper-button-next.swiper-button-testimonail-next,
+    .swiper-button-prev.swiper-button-testimonail-prev {
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 9px;
+    }
+
+    .visible-tab {
+        display: block !important;
+    }
+
+    .hide-tab {
+        display: none !important;
+    }
+
+    .title-font h2 {
+        font-size: 4.5rem;
+    }
+
+    .subtitle-font-size p {
+        font-size: 2rem;
+    }
+
+    /* Header CSS */
+    .orange-btn a {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .header-wrapper {
+        padding: 1rem 0;
+    }
+
+    .inner-header-flex {
+        gap: 1rem;
+    }
+
+    /* Landing */
+    .title-font h1 {
+        font-size: 4rem;
+    }
+
+    .content-font-size h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-2-content .content-font-size {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-2-content {
+        gap: calc(var(--big-gap-size)/1.5);
+    }
+
+    /* About CSS */
+    .sect6-about-content {
+        width: 100%;
+    }
+
+    .grid-sect2-about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            'one'
+            'two'
+            'three';
+    }
+
+    .two-grids-cards-align {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        row-gap: 2rem;
+    }
+
+    .margin-top-40-abt {
+        margin-top: 4% !important;
+    }
+
+    .right-ul-abt-img {
+        background-color: #fc9651;
+        height: 35vh;
+    }
+
+    .left-ul-abt-img {
+        background-color: #1713f0;
+        height: 45vh;
+    }
+
+    /* Forte CSS */
+    .grid-sect3-forte,
+    .grid-sect5-forte {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .blog-small-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .works-project-name.blog-title {
+        width: 100%;
+    }
+
+    /* News CSS */
+    .flex-newsBanner {
+        gap: var(--small-gap-size);
+    }
+
+    .news-wrapper .subtitle-font-size p {
+        font-size: 1.75rem;
+    }
+
+    .flex-newsBanner .newsBanner-headline {
+        width: 100%;
+    }
+
+    .news-banner-swiper {
+        width: 100%;
+    }
+
+    /* Contact Page */
+    .contact-page-grid-division {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .submit-btn button {
+        padding: 1.5rem;
+    }
+
+    .contact-label input,
+    .contact-label textarea {
+        padding: 1.5rem;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    /* Testimonial CSS */
+    .grid-sect3 .inner-flex,
+    .grid-sect5 .inner-flex {
+        transform: translateY(0);
+        transition: var(--common-transition);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+
+    .visible-tab-mobile {
+        display: block !important;
+    }
+
+    .hide-tab-mobile {
+        display: none !important;
+    }
+
+    .title-font h2 {
+        font-size: 3rem;
+    }
+
+    /* Header CSS */
+    .logo {
+        width: 8rem;
+    }
+
+    .orange-btn a {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-wrapper {
+        padding: 1rem 0.5rem;
+    }
+
+    .header-wrapper.header_change {
+        padding: 0.5rem;
+    }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .menu-ul>li {
+        margin: 0 !important;
+    }
+
+    .menu_wrapper a p {
+        font-size: 45px;
+    }
+
+    ul.menu-ul {
+        gap: 1rem;
+    }
+
+    /* Footer CSS */
+    .footer-font p,
+    .footer-font a>span,
+    .footer-font span {
+        font-size: 1.125rem;
+    }
+
+    .flex-footer-two {
+        flex-direction: column;
+        align-items: unset;
+        gap: 1rem;
+    }
+
+
+    /* Landing CSS */
+    .content-font-size h3 {
+        font-size: 1.25rem;
+    }
+
+    .title-font h1 {
+        font-size: 2.75rem;
+    }
+
+    .link-font p,
+    .link-font span {
+        font-size: 1rem;
+    }
+
+    .section-2-content {
+        gap: calc(var(--big-gap-size)/2);
+    }
+
+    .banner-img img {
+        aspect-ratio: unset;
+    }
+
+    .left-txt-sect5,
+    .right-txt-sect5 {
+        left: 50%;
+        right: unset;
+        transform: translate(-50%);
+    }
+
+    /* Forte CSS */
+    .grid-sect3 .inner-flex,
+    .grid-sect5 .inner-flex {
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    .grid-sect3 .inner-flex,
+    .grid-sect5 .inner-flex {
+        transform: translateY(0);
+    }
+
+    .grid-sect3 .inner-flex,
+    .grid-sect5 .inner-flex {
+        width: 75%;
+    }
+
+    .grid-sect3 .inner-flex>.forte-icon,
+    .grid-sect5 .inner-flex>.forte-icon,
+    .grid-sect3 .inner-flex>.link-font,
+    .grid-sect5 .inner-flex>.link-font {
+        opacity: 1;
+        visibility: visible;
+        transition: var(--common-transition);
+    }
+
+    /* News CSS */
+    .flex-newsBanner {
+        flex-direction: column;
+    }
+
+    .grid-sect2-news {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Testimonial CSS */
+    .testimonial-div {
+        margin-top: 6rem;
+    }
+
+    .swiper-button-next.swiper-button-testimonail-next,
+    .swiper-button-prev.swiper-button-testimonail-prev {
+        top: 20%;
+    }
+
+    .testi-img {
+        width: 45%;
+    }
+
+    /* Blog CSS */
+    .works-detail-page-banner-img.works-detail-page-banner-img-m {
+        aspect-ratio: unset;
+    }
+
+    /* Contact Page CSS */
+    .contactForm {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'one''two''three''five''four''six';
+        gap: 2rem;
+    }
+}

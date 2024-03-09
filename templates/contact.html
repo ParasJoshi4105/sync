@@ -1,0 +1,90 @@
+<div class="sync-contact-page-wrapper">
+    <section class="section-one-contact  relative" id="section-one-contact">
+        <div class="contact-us-banner relative">
+            <img src="https://dummyimage.com/1920X670/000000/000000" class="hide-tab-mobile" alt="">
+            <img src="https://dummyimage.com/500X800/000000/000000" class="visible-tab-mobile" alt="">
+            <div class="black_overlay"></div>
+            <div class="banner-abs-title">
+                <div class="title-font">
+                    <h1 class=" bold_font_family">
+                        Contact
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-two-contact black-bg section-padding-top relative" id="section-two-contact">
+        <div class="contact-page-container">
+            <div class="title-font">
+                <h2 class=" bold_font_family">
+                    Feel Free To Ask
+                </h2>
+            </div>
+            <div class="contactFormGrid">
+                <form name="contactForm" class="contactForm" id="contactForm" ng-validate="contactInquiryValidate"
+                    ng-submit="contactInquiry(contactForm)" style="margin-left: 0 !important;">
+                    <div class="contact-label">
+                        <input type="text" name="name" id="name" placeholder="Name*" ng-model="contactObj.name"
+                            required>
+                    </div>
+                    <div class="contact-label">
+                        <input type="text" name="company_name" id="company_name" placeholder="Company Name*"
+                            ng-model="contactObj.company_name" required>
+                    </div>
+                    <div class="contact-label">
+                        <input type="email" name="email" id="email" placeholder="Email*" ng-model="contactObj.email"
+                            required>
+                    </div>
+                    <div class="contact-label">
+                        <textarea name="message" id="message" rows="5" ng-model="contactObj.message"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact-label">
+                        <input type="text" name="phone" id="phone" ng-model="contactObj.phone" minlength="10"
+                            maxlength="10" numbers-only placeholder="Contact Number*" required>
+                    </div>
+                    <div class="contact-label submit-btn">
+                        <button type="submit">
+                            <p>Submit</p>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section-three-contact black-bg  section-padding relative" id="section-three-contact">
+        <div class="contact-page-container">
+            <div class="inner-flex flex-gap-medium">
+
+                <div class="title-font">
+                    <h2 class=" bold_font_family">
+                        Sync  Business Insights
+                    </h2>
+                </div>
+                <div class="inner-flex">
+                    <div class="footer-font">
+                        <a href="javascript:void(0)">
+                            <span class=" medium_font_family">
+                                1011 Shivalik Shilp
+                                Iskon cross road <br>
+                                Ahmedabad, India
+                                380015
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer-font">
+                        <a href="javascript:void(0)">
+                            <span class=" medium_font_family">
+                                info@syncbusinessinsights.com
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</div>
+

@@ -1,0 +1,75 @@
+<div class="testimonial-wrapper">
+    <section class="section-one-testimonial relative" id="section-one-testimonial">
+        <div class="testimonial-us-banner relative">
+            <img src="https://dummyimage.com/1920X670/000000/000000" class="hide-tab-mobile" alt="">
+            <img src="https://dummyimage.com/500X800/000000/000000" class="visible-tab-mobile" alt="">
+            <div class="black_overlay"></div>
+            <div class="banner-abs-title">
+                <div class="title-font">
+                    <h1 class=" baskerVille_font_family wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        Testimonial
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-two-testimonial black-bg section-padding relative" id="section-two-testimonial">
+        <div class="main-container">
+            <div class="inner-flex flex-gap-big">
+                <div class="content-font-size">
+                    <h3 class="text-align-center " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores et eveniet totam quasi
+                        aliquam, exercitationem dolor maiores velit veritatis laborum quae, unde nostrum, harum
+                        molestias. Alias iure voluptatibus commodi ratione.
+                    </h3>
+                </div>
+                <div class="testimonial-swiper relative">
+                    <ks-swiper-container override-parameters="testimonialSwiper">
+                        <ks-swiper-slide ng-repeat="data in testimonialData">
+                            <div class="testimonial-div relative">
+                                <div class="testi-img">
+                                    <img src="{{data.image}}" alt=""  data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                                </div>
+                                <div class="inner-flex" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                                    <div class="testi-text link-font">
+                                        <p class="">
+                                            {{data.content}}
+                                        </p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <span class="material-symbols-outlined ">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined ">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined ">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined ">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined ">
+                                            star
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </ks-swiper-slide>
+                    </ks-swiper-container>
+                    <div class="swiper-pagination testimonial-swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-button-testimonail-next">
+                        <span class="material-symbols-outlined black-text">
+                            arrow_circle_right
+                        </span>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-testimonail-prev">
+                        <span class="material-symbols-outlined black-text">
+                            arrow_circle_left
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

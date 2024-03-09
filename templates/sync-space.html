@@ -1,0 +1,76 @@
+<div class="news-wrapper highlighted-bg">
+    <section class="section-one-sysncSpace black-bg" id="section-one-sysncSpace">
+        <div class="main-container">
+            <div class="inner-flex flex-align-center flex-gap-big">
+                <div class="inner-flex flex-gap-medium flex-align-center">
+                    <div class="title-font overflow">
+                        <h2 class=" uppercase bold_font_family wow fade_top" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                            in the <span class=" uppercase bold_font_family">news</span>
+                        </h2>
+                    </div>
+                    <div class="subtitle-font-size overflow">
+                        <p class="bold_font_family  wow fade_top" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            Everything you wanted to know about <span class=" bold_font_family">Our
+                                Work.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="news-banner-swiper relative">
+                    <ks-swiper-container override-parameters="newsBannerSwiper">
+                        <ks-swiper-slide ng-repeat="newsData in newsBannerData">
+                            <div class="flex-newsBanner">
+                                <div class="banner-img-news wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <img src="{{newsData.image}}" class="hide-tab" alt="">
+                                    <img src="{{newsData.image_mob}}" class="visible-tab" alt="">
+                                </div>
+                                <div class="inner-flex flex-gap-small newsBanner-headline">
+                                    <div class="subtitle-font-size wow fade_top" data-wow-duration="1s" data-wow-delay="0.4s">
+                                        <p class="">
+                                            {{newsData.headline}}
+                                        </p>
+                                    </div>
+                                    <div class="content-font-size wow fade_top" data-wow-duration="1s" data-wow-delay="0.5s">
+                                        <h3 class="">
+                                            {{newsData.date}}
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </ks-swiper-slide>
+                    </ks-swiper-container>
+                    <div class="swiper-pagination newsBanner-swiper-pagination wow fade_top" data-wow-duration="1s" data-wow-delay="0.4s"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-two-sysncSpace black-bg section-padding" id="section-two-sysncSpace">
+        <div class="main-container">
+            <div class="grid-sect2-news">
+                <div class="grid-sect2-div inner-flex flex-gap-small overflow" ng-repeat="data in bloglist">
+                    
+                    <div class="sect2-img" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                        <img src="{{data.social_image}}" alt="">
+                    </div>
+                    <div class="subtitle-font-size overflow">
+                        <h3 class="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            {{data.title}}
+                        </h3>
+                    </div>
+                    <div class="content-font-size overflow">
+                        <h3 class="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            {{data.readable_publish_date}}
+                        </h3>
+                    </div>
+                    <a href="sync-space/{{data.slug}}" class="flex-row link-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <span class="material-symbols-outlined ">
+                            arrow_forward
+                        </span>
+                        <span class="">
+                            Read Article
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

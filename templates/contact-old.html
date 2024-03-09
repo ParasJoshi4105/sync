@@ -1,0 +1,289 @@
+<div class="sync-contact-page-wrapper">
+    <section class="section-one-contact  relative" id="section-one-contact">
+        <div class="contact-us-banner relative">
+            <img src="https://dummyimage.com/1920X670/ffe3cc/ffe3cc" class="hide-tab-mobile" alt="">
+            <img src="https://dummyimage.com/500X800/ffe3cc/ffe3cc" class="visible-tab-mobile" alt="">
+            <div class="black_overlay"></div>
+            <div class="banner-abs-title">
+                <div class="title-font">
+                    <h1 class="black-text baskerVille_font_family">
+                        Let's Talk
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-two-contact section-padding relative" id="section-two-contact">
+        <div class="main-container">
+            <div class="contact-page-grid-division">
+                <div class="contact-page-info-div">
+                    <div class="inner-flex">
+                        <div class="content-font-size">
+                            <h3 class="black-text">
+                                Get in touch with us for any inquiry, You can reach us, <br> email us at
+                                Business:
+                                <!-- <a href="mailto:business@revenantesports.com"
+                                    class="black-text">business@revenantesports.com</a> -->
+                                <br>& Invitations:
+                                <!-- <a href="mailto:inviteus@revenantesports.com"
+                                    class="black-text">inviteus@revenantesports.com</a> -->
+
+                            </h3>
+                        </div>
+                        <br>
+                        <div class="inner-flex">
+                            <div class="menu-font">
+                                <p class="black-text regular_font_family">
+                                    Address
+                                </p>
+                            </div>
+                            <br>
+                            <div class="content-font-size">
+                                <h3 class="black-text">
+                                    PatelNagar, AryaNagar, Rajkot, Gujarat 360003
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us-lets-talk-form">
+                    <div class="menu-font">
+                        <p class="black-text">
+                            Feel free to <span>Contact Us</span>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <form class=" wow fade_top" data-wow-duration="0.8s" data-wow-delay="0.5s"
+                        ng-submit="careerform(inquiryForm)" name="inquiryForm" id="inquiryForm"
+                        ng-validate="inquiryFormValidate">
+                        <select class="" id="topic" ng-model="Addcareer.topic" name="topic">
+                            <option value="" class="option" disabled="" selected="selected">
+                                Choose a Topic*
+                            </option>
+                            <option value="General Enquiry" class="option"> General Enquiry </option>
+                            <option value="Press / Media" class="option"> Press / Media </option>
+                            <option value="Partner with us" class="option"> Partner with us</option>
+                        </select>
+                        <div class="contact_form label_flex">
+                            <input type="text" class="form-control-txt " name="first_name" placeholder=" First Name*"
+                                required="" ng-model="Addcareer.first_name" id="first_name">
+                        </div>
+                        <div class="contact_form label_flex">
+                            <input type="text" class="form-control-txt " name="last_name" placeholder=" Last Name*"
+                                required="" ng-model="Addcareer.last_name" id="last_name">
+                        </div>
+
+                        <div class="contact_form label_flex">
+                            <input type="email" class="form-control-txt " name="email" placeholder="Email Address *"
+                                required="" ng-model="Addcareer.email" id="email">
+                        </div>
+                        <div class="contact_form label_flex">
+                            <input type="text" class="form-control-txt " name="subject" placeholder="Subject"
+                                required="" ng-model="Addcareer.subject" id="subject">
+                        </div>
+                        <div class="contact_form label_flex">
+                            <textarea id="message" name="message" type="text" ng-model="Addcareer.message"
+                                placeholder="Comments/Questions" class="form-control " tabindex="3" rows="3"
+                                aria-multiline="true">    </textarea>
+                        </div>
+
+                        <div class="checkbox_contact ">
+
+                            <!-- <label class="checkbox" for="checkbox">
+                                <input id="checkbox" class="check" name="checkbox" type="checkbox">
+                                <span class="box"></span>
+                                By using this form you agree with the storage and handling of your data by this
+                                website according to our Privacy policy
+                            </label> -->
+
+                            <label class="checkbox" for="is_clicked_privacy">
+                                <input type="checkbox" class="form-control-txt " name="is_clicked_privacy" required=""
+                                    aria-required="true" aria-invalid="true" ng-model="Addcareer.is_clicked_privacy"
+                                    id="is_clicked_privacy">
+                                <!-- <input id="is_clicked_privacy" class="check" ng-model="Addcareer.is_clicked_privacy" name="is_clicked_privacy" type="checkbox" required="" value="1"> -->
+                                <!-- <span class="box"></span> -->
+                                By using this form you agree with the storage and handling of your data by this
+                                website
+                                according to our Privacy policy
+                            </label>
+                        </div>
+
+                        <!-- <button " class="submit-btn-form transition">
+                            <div class="view_flex shop_buttonn">
+                                <div class="view_arrow_img relative">
+                                    <img src="https://ik.imagekit.io/2e9oeg61m/images/icons/right-white2.svg" alt=""
+                                        class="hover-white">
+                                    <img src="https://ik.imagekit.io/2e9oeg61m/images/icons/right-arrow-blue.svg" alt=""
+                                        class="hover-blue">
+                                </div>
+                                <div class="page-links view_all ">
+                                    <p>Submit Application </p>
+                                </div>
+                            </div>
+                        </button> -->
+
+                        <div class="orange-btn">
+                            <button class="stack-btn link-font" type="submit">
+                                <span class="medium_font_family">
+                                    Submit
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<style>
+    .checkbox {
+        display: inline-block;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .checkbox .box {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem;
+        border: 2px solid #B5B5B5;
+        border-radius: 0.15rem;
+        margin-bottom: -0.25rem;
+        transition: all 0.35s ease;
+    }
+
+    .checkbox:hover .box {
+        border: 2px solid #5018fa;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .check:checked+.box {
+        border: 2px solid #5018fa;
+        background: #5018fa;
+    }
+
+    .check:checked+.box::after {
+        content: "";
+        display: block;
+        width: 0.3rem;
+        height: 0.7rem;
+        border: 4px solid white;
+        border-width: 0 3px 3px 0;
+        border-radius: 0.1rem;
+        transform: rotate(45deg);
+        margin-left: 0.25rem;
+        margin-top: -0.05rem;
+    }
+
+    .check:active+.box {
+        box-shadow: 0 0 4px #5018fa;
+    }
+
+    .career_banner {
+        height: 60vh;
+    }
+
+    .career_banner img {
+        height: 100%;
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        .check:checked+.box::after {
+            content: "";
+            display: block;
+            width: 0.5rem;
+            height: 0.9rem;
+            border: 4px solid white;
+            border-width: 0 2px 2px 0;
+            border-radius: 0.1rem;
+            transform: rotate(45deg);
+            margin-left: 0.35rem;
+            margin-top: -0.05rem;
+        }
+
+        .checkbox .box {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+</style>
+
+
+
+<script>
+    function phonenumber(inputtxt) {
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (inputtxt.value.match(phoneno)) {
+            return true;
+        } else {
+            alert("Not a valid Phone Number");
+            return false;
+        }
+    }
+</script>
+<script>
+    function numbersOnly(input) {
+
+        var regex = /[^0-9]/gi;
+
+        input.value = input.value.replace(regex, "");
+
+    }
+</script>
+
+
+<script>
+    $('#contact_inquiry_form').validate({
+        rules: {
+            client_name: {
+                required: true
+            },
+            client_contact_no: {
+                required: true,
+                rangelength: [10, 12],
+                number: true
+            },
+            email_address: {
+                required: true,
+                email: true
+            },
+
+        },
+        messages: {
+            client_name: 'Please enter First Name.',
+            email_address: {
+                required: 'Please enter Email Address.',
+                email: 'Please enter a valid Email Address.',
+            },
+            client_contact_no: {
+                required: 'Please enter Contact.',
+                rangelength: 'Contact should be 10 digit number.',
+            }
+        },
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#contact_inquiry_form").submit(function (e) {
+
+            $("#contact_inquiry_form button").attr("disabled", true);
+
+            return true;
+
+        });
+    });
+</script>

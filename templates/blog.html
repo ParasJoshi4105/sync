@@ -1,0 +1,76 @@
+<div id="sync-blog-wrapper" class="sync-blog-wrapper relative">
+
+    <section class="blog-section-1 section-padding-top black-bg" id="sync-blog-section-1">
+        <div class="blog-small-container">
+            <div class="main-container">
+                <div class="works-project-name blog-title">
+                    <h1 class="">{{blogs_details.title}}</h1>
+                </div>
+                <br>
+                <div class="tags-li" style="display: flex;gap: 0.5rem;align-items: center;margin-bottom: 1.5rem;">
+                    <p style="color: #000;padding: 0.25rem 0.5rem !important;border-radius: 0.5rem;font-size: 1rem;background-color: #DEDEDE;"
+                        ng-repeat="tagsData in blogs_details.tags">
+                        #{{tagsData}}
+                    </p>
+                </div>
+
+                <p style="font-size: 16px;
+                color: #DEDEDE;">
+                    {{blogs_details.readable_publish_date}}
+                </p>
+                <br>
+                <img src="{{blogs_details.cover_image}}" class="hide-tab-mobile" alt>
+                <img src="{{blogs_details.cover_image}}" class="visible-tab-mobile" alt>
+            </div>
+            <div class="main-container">
+                <div class="project-information-flex project-information-flex-blogs">
+                    <div>
+                        <div class="blog-detail-mark" ng-bind-html="blogs_details.body_html">
+
+                        </div>
+                        <div class="smallest-container">
+                            <div style="display: flex;gap: 1.5rem;align-items: center;flex-wrap: wrap;">
+                                <div class="share-button">
+                                    <a href="javascript:void(0);" title="Public Reactions - Positive">
+                                        <button>
+                                            <div class="share-btn-icon">
+                                                <img src="assets/images/icons/like.png" alt="">
+                                            </div>
+                                            <p class="">
+                                                {{blogs_details.public_reactions_count}}
+                                            </p>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="share-button">
+                                    <a href="javascript:void(0);" title="Comments">
+                                        <button>
+                                            <div class="share-btn-icon">
+                                                <img src="assets/images/icons/comment.png" alt="">
+                                            </div>
+                                            <p class="">
+                                                {{blogs_details.comments_count}}
+                                            </p>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="share-button">
+                                    <a href="{{blogs_details.url}}" target="_blank">
+                                        <button>
+                                            <div class="share-btn-icon">
+                                                <img src="assets/images/icons/share.png" alt="">
+                                            </div>
+                                            <p class="">
+                                                Share
+                                            </p>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

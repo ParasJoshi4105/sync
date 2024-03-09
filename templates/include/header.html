@@ -1,0 +1,119 @@
+<div class="header-wrapper" ng-class="{'active-menu': mobile_menu_toggleF, 'black-header' : blackheader_flag}" >
+    <div class="main-container">
+        <div class="header-flex">
+            <div class="inner-header-flex">
+                <div class="menu-bar" ng-class="{'active-menu': mobile_menu_toggleF }" ng-click="mobile_menu_toggle()">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+                <div class="logo" ng-click="menu_click_close()">
+                    <a href="{{base_url}}">
+                        <img src="assets/images/logo/header-Logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="orange-btn" ng-class="{'active-menu': mobile_menu_toggleF }">
+                <a href="javasrcipt:void(0);">
+                    <button class="stack-btn link-font">
+                        <span class="medium_font_family">
+                            Stack Up
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu" ng-class="{'active-menu': mobile_menu_toggleF }">
+    <div class="menu_wrapper">
+        <ul class="inner-flex  flex-gap-0 menu-ul">
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="syncs-desk">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            sync's desk
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="forte">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            forte
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="{{base_url}}">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            sync assess
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="sync-space">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            sync space
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="testimonial">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            testimonials
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li ng-click="mobile_menu_toggle()" role="button" tabindex="0">
+                <a href="contact">
+                    <div class="menu-font">
+                        <p class="black-text capitalize baskerVille_font_family">
+                            contact
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="menu-overlay" ng-class="{'active-menu-overlay': mobile_menu_toggleF }" ng-click="menu_click_close();"></div>
+
+<script type="text/javascript" class="ng-scope">
+    var prev = 0;
+    var $window = $(window);
+    var nav = $(".header-wrapper");
+    $window.on("scroll", function (e) {
+        var scrollTop = $window.scrollTop();
+        if (scrollTop <= 100) {
+            nav.removeClass("webmenu_hidden");
+            prev = 0;
+        } else {
+            nav.toggleClass("webmenu_hidden", scrollTop > prev);
+            prev = scrollTop;
+        }
+    });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".header-wrapper").addClass(
+                "header_change"
+            );
+        } else {
+            $(".header-wrapper").removeClass(
+                "header_change"
+            );
+        }
+    });
+</script>
