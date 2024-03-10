@@ -1232,6 +1232,7 @@ hr {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 50%;
 }
 
 .contact-page-grid-division {
@@ -1421,6 +1422,11 @@ label.error {
 }
 
 /* Testimonial CSS */
+
+.section-two-testimonial.section-padding{
+    padding-top: 0;
+}
+
 .testi-img {
     position: absolute;
     top: -75%;
@@ -1551,12 +1557,12 @@ label.error {
 }
 
 .right-ul-abt-img {
-    background-color: #202020;
+    background-color: var(--highlighted-bg);
     height: 60vh;
 }
 
 .left-ul-abt-img {
-    background-color: var(--highlighted-bg);
+    background-color: var(--primary-color);
     height: 120vh;
 }
 

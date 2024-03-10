@@ -273,6 +273,10 @@
         font-size: 12px;
     }
 
+    .banner-abs-title {
+        width: 90%;
+    }
+
     .visible-tab-mobile {
         display: block !important;
     }
